@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="1"/>
+    </linearGradient>
+    
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="1"/>
+    </linearGradient>
+    
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main circular graphic -->
+  <circle cx="200" cy="150" r="120" fill="url(#circleGradient)" opacity="0.9"/>
+  
+  <!-- Inner circle for depth -->
+  <circle cx="200" cy="150" r="100" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+  
+  <!-- AI Text at center -->
+  <text x="200" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff">AI</text>
+  
+  <!-- DATA PRIVACY & SECURITY Text below AI -->
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="normal" fill="#60a5fa" opacity="0.9">DATA PRIVACY &amp; SECURITY</text>
+  
+  <!-- Security padlock icons around the circle -->
+  <g fill="#ffffff" opacity="0.8">
+    <!-- Top padlocks -->
+    <g transform="translate(200, 60)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Right padlocks -->
+    <g transform="translate(320, 120)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <g transform="translate(340, 150)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Bottom padlocks -->
+    <g transform="translate(280, 220)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <g transform="translate(200, 240)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Left padlocks -->
+    <g transform="translate(80, 180)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <g transform="translate(60, 150)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Top left padlock -->
+    <g transform="translate(120, 80)">
+      <rect x="-3" y="-1" width="6" height="8" rx="1" fill="#ffffff"/>
+      <path d="M-4 -1 L-4 -3 Q-4 -4 -2 -4 Q0 -4 0 -3 L0 -1" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Circular arrow icon -->
+  <g transform="translate(280, 80)" fill="#ffffff" opacity="0.8">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M-6 0 L-2 -2 L-2 -1 L6 -1 L6 1 L-2 1 L-2 2 Z" fill="#ffffff"/>
+  </g>
+  
+  <!-- Data flow icon -->
+  <g transform="translate(120, 220)" fill="#ffffff" opacity="0.8">
+    <rect x="-8" y="-6" width="16" height="12" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="-4" cy="0" r="2" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+    <circle cx="4" cy="0" r="2" fill="#ffffff"/>
+    <path d="M-2 0 L2 0" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Binary code scattered around -->
+  <g font-family="monospace" font-size="10" fill="#60a5fa" opacity="0.7">
+    <text x="80" y="40">01001000</text>
+    <text x="320" y="40">11010101</text>
+    <text x="350" y="80">10101010</text>
+    <text x="350" y="200">01110110</text>
+    <text x="320" y="260">11010101</text>
+    <text x="80" y="260">01001000</text>
+    <text x="50" y="200">10101010</text>
+    <text x="50" y="80">01110110</text>
+  </g>
+  
+  <!-- Alphanumeric strings -->
+  <g font-family="Arial, sans-serif" font-size="8" fill="#60a5fa" opacity="0.6">
+    <text x="70" y="60">DISFIN</text>
+    <text x="330" y="60">VOL</text>
+    <text x="330" y="240">JOVIED</text>
+    <text x="70" y="240">BER</text>
+    <text x="90" y="100">DISFIN</text>
+    <text x="310" y="100">VOL</text>
+    <text x="310" y="200">JOVIED</text>
+    <text x="90" y="200">BER</text>
+  </g>
+  
+  <!-- Subtle connecting lines -->
+  <g stroke="#3b82f6" stroke-width="0.5" opacity="0.3" fill="none">
+    <line x1="200" y1="30" x2="200" y2="270"/>
+    <line x1="30" y1="150" x2="370" y2="150"/>
+    <line x1="80" y1="80" x2="320" y2="220"/>
+    <line x1="320" y1="80" x2="80" y2="220"/>
+  </g>
+  
+  <!-- Small decorative dots -->
+  <g fill="#60a5fa" opacity="0.5">
+    <circle cx="160" cy="100" r="2"/>
+    <circle cx="240" cy="100" r="2"/>
+    <circle cx="160" cy="200" r="2"/>
+    <circle cx="240" cy="200" r="2"/>
+    <circle cx="100" cy="130" r="1.5"/>
+    <circle cx="300" cy="130" r="1.5"/>
+    <circle cx="100" cy="170" r="1.5"/>
+    <circle cx="300" cy="170" r="1.5"/>
+  </g>
+</svg>
